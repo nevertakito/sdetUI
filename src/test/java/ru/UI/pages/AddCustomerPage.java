@@ -7,8 +7,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import ru.UI.helpers.Wait;
 
-import static org.testng.AssertJUnit.assertEquals;
-
 public class AddCustomerPage extends BasePage{
     private final String headAddCustomerBtnXPath = "/html/body/div/div/div[2]/div/div[1]/button[1]";
     private final String postCodeFieldXPath = "/html/body/div/div/div[2]/div/div[2]/div/div/form/div[3]/input";
