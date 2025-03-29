@@ -19,15 +19,15 @@ public class AddCustomerPage extends BasePage{
     private final By lastNameFieldBy = By.xpath(lastNameFieldXPath);
     private final By addCustomerBtnBy = By.xpath(addCustomerBtnXPath);
     @FindBy(xpath = headAddCustomerBtnXPath)
-    private WebElement headAddCustomerBtn;
+    WebElement headAddCustomerBtn;
     @FindBy(xpath = postCodeFieldXPath)
-    private WebElement postCodeField;
+    WebElement postCodeField;
     @FindBy(xpath = firstNameFieldXPath)
-    private WebElement firstNameField;
+    WebElement firstNameField;
     @FindBy(xpath = lastNameFieldXPath)
-    private WebElement lastNameField;
+    WebElement lastNameField;
     @FindBy(xpath = addCustomerBtnXPath)
-    private WebElement addCustomerBtn;
+    WebElement addCustomerBtn;
 
     public AddCustomerPage(final WebDriver driver) {
         super(driver);
