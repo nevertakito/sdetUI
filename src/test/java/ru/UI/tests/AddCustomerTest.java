@@ -34,6 +34,7 @@ public class AddCustomerTest extends BaseTest{
     }
     @AfterClass
     public final void close(){
+        DriverPool.getDriver().manage().deleteAllCookies();
         super.baseClose();
     }
 }
