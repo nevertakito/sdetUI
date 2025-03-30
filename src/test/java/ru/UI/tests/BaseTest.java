@@ -12,7 +12,6 @@ import ru.UI.pages.CustomersPage;
 public class BaseTest {
     protected WebDriver driver;
     protected CustomersPage customersPage;
-
     @BeforeClass
     void baseSetup() {
         ChromeOptions options = new ChromeOptions();
@@ -24,7 +23,6 @@ public class BaseTest {
         DriverPool.getDriver().manage().window().maximize();
         DriverPool.getDriver().get(ConfProperties.getProperty("page"));
     }
-
     @AfterClass
     void baseClose() {
         DriverPool.quitDriver();

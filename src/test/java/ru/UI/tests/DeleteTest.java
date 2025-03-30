@@ -17,9 +17,8 @@ public class DeleteTest extends BaseTest {
         customersPage.clickDeleteBtn();
         assertEquals(-1,customersPage.getArrayValues().indexOf(customerToRemove));
     }
-
     @AfterMethod
-    public final void cache(){
+    public final void deleteCookies(){
         DriverPool.getDriver().manage().deleteAllCookies();
     }
 }

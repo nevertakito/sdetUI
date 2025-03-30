@@ -24,7 +24,7 @@ public class SortingTest extends BaseTest{
         assertEquals(list, sortedList);
     }
     @AfterMethod
-    public final void cache(){
+    public final void deleteCookies(){
         DriverPool.getDriver().manage().deleteAllCookies();
     }
 }

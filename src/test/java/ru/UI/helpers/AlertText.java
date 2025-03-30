@@ -14,7 +14,6 @@ public class AlertText {
         alert.accept();
         return alertText;
     }
-
     /**
      * @param driver - драйвер
      * @return id под которым добавился новый покупатель
