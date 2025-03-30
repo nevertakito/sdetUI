@@ -25,6 +25,7 @@ public class BaseTest {
     }
     @AfterClass
     void baseClose() {
+        DriverPool.getDriver().manage().deleteAllCookies();
         DriverPool.quitDriver();
     }
 }

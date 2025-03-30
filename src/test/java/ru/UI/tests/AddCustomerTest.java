@@ -1,7 +1,6 @@
 package ru.UI.tests;
 
 import io.qameta.allure.Description;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 import ru.UI.helpers.AlertText;
 import ru.UI.helpers.DriverPool;
@@ -23,11 +22,7 @@ public class AddCustomerTest extends BaseTest{
         addCustomerPage.inputLastName("Last");
         addCustomerPage.clickAddCustomerBtn();
 
-        assertEquals("Customer added successfully with customer id :"+AlertText.getCustomerId(DriverPool.getDriver()),
+        assertEquals("Customer added successfully with customer id :" + AlertText.getCustomerId(DriverPool.getDriver()),
                 AlertText.getAlertText(DriverPool.getDriver()));
-    }
-    @AfterMethod
-    public final void deleteCookies(){
-        DriverPool.getDriver().manage().deleteAllCookies();
     }
 }
