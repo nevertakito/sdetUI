@@ -9,7 +9,6 @@ import java.time.Duration;
 
 public class Wait {
     private static final int TIMEOUT = 10;
-
     /**
      * Метод ожидания появления локаторов
      * @param driver - драйвер
