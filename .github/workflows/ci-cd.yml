@@ -2,9 +2,9 @@ name: CI/CD
 
 on:
   push:
-    branches: [ "master", "test-UI" ]  # Триггерится при пуше в master или test-UI
+    branches: [ "master", "test-UI" ]
   pull_request:
-    branches: [ "master", "test-UI" ]  # Триггерится при PR в master или test-UI
+    branches: [ "master", "test-UI" ]
 
 jobs:
   build-and-test:
