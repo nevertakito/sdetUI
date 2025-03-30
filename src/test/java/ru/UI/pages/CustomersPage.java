@@ -16,7 +16,7 @@ public class CustomersPage extends BasePage{
     private final By customersBtn = By.xpath("/html/body/div/div/div[2]/div/div[1]/button[3]");
     private final By firstNameBtn = By.xpath("/html/body/div/div/div[2]/div/div[2]/div/div/table/thead/tr/td[1]/a");
     @FindBy(xpath = "/html/body/div/div/div[2]/div/div[2]/div/div/table")
-    private WebElement table;
+    WebElement table;
 
     public CustomersPage(final WebDriver driver) {
         super(driver);
