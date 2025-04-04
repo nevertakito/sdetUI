@@ -1,9 +1,7 @@
 package ru.UI.tests;
 
 import io.qameta.allure.Description;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
-import ru.UI.helpers.DriverPool;
 
 import java.util.List;
 
@@ -22,9 +20,5 @@ public class SortingTest extends BaseTest{
         customersPage.doubleClickFirstNameBtn();
         List<String> sortedList = customersPage.getArrayValues();
         assertEquals(list, sortedList);
-    }
-    @AfterMethod
-    public final void cache(){
-        DriverPool.getDriver().manage().deleteAllCookies();
     }
 }

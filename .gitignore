@@ -13,6 +13,9 @@ target/
 *.ipr
 out/
 
+# Allure
+allure-results/
+allure-report/
 
 # Maven/Gradle
 build/
